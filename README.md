@@ -1,5 +1,6 @@
 # Yamdb_final
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/YablokovaIrina/yamdb_final/blob/master/.github/workflows/yamdb_workflow.yml)
+
 ## Описание проекта:
 Проект YaMDb собирает отзывы пользователей на произведения. Сами произведения в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку.   
 Произведения делятся на категории, а также им может быть присвоен жанр из списка предустановленных (например, «Сказка», «Рок» или «Артхаус»).  
