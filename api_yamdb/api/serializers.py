@@ -2,11 +2,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework import serializers
 from rest_framework.serializers import SlugRelatedField
 
-from api_yamdb.settings import (
-    EMAIL_LENGHT,
-    MAX_LENGHT,
-    MAX_LENGHT_CODE
-)
+from api_yamdb.settings import EMAIL_LENGHT, MAX_LENGHT, MAX_LENGHT_CODE
 from reviews.models import Category, Comment, Genre, Review, Title, User
 from reviews.validators import validate_username
 
