@@ -28,6 +28,7 @@ services:
 
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./etc/letsencrypt/live/:/etc/letsencrypt/live
       - static_value:/var/html/static/
       - media_value:/var/html/media/
 
