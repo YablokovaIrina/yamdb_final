@@ -31,9 +31,18 @@ services:
       - /etc/letsencrypt/live/:/etc/letsencrypt/live
       - static_value:/var/html/static/
       - media_value:/var/html/media/
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+      - ./data/nginx:/etc/nginx/conf.d
 
     depends_on:
       - web
+  
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
 
 volumes: 
   static_value:
